@@ -6,6 +6,9 @@ merge_protections:
     success_conditions:
       - check-success = kirasec-never-runs
 
+merge_protections_settings:
+  reporting_method: deployments
+
 queue_rules:
   - name: default
     queue_conditions: []
