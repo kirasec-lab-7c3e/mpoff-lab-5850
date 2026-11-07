@@ -1,12 +1,9 @@
 merge_protections:
   - name: KIRASEC-GATE-MUST-HOLD
-    description: mandatory security gate
     if:
       - base = main
     success_conditions:
       - check-success = kirasec-never-runs
-
 queue_rules:
   - name: default
-    queue_conditions: []
-    merge_conditions: []
+    merge_method: TOTALLY-BOGUS-METHOD
