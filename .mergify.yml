@@ -7,7 +7,7 @@ merge_protections:
       - check-success = kirasec-never-runs
 
 merge_protections_settings:
-  reporting_method: deployments
+  reporting_method: check-runs
 
 queue_rules:
   - name: default
