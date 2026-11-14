@@ -8,7 +8,6 @@ jobs:
     environment: production
     steps:
       - uses: actions/checkout@v4
-      - name: deploy
-        env:
+      - env:
           DEPLOY_KEY: ${{ secrets.KIRASEC_PROD_DEPLOY_KEY }}
         run: bash ./deploy.sh
